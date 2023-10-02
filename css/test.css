@@ -1,0 +1,344 @@
+@font-face {
+  font-family: 'gamilia';
+  src: url('/gamilia-font/GamiliaDemoRegular-d9DL7.ttf');
+  src: url('/gamilia-font/GamiliademoRegular-mL9Ev.otf');
+}
+
+@font-face {
+  font-family: 'nighty';
+  src: url('/Nightydemo.otf');
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b5b5b5 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b5b5b5;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+/* Loader */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Set the background color to white */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it's on top of other content */
+}
+
+.loader {
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.loader span {
+  width: 50px;
+  height: 50px;
+  margin: -5px;
+  animation: dots_411 1.5s infinite ease-in-out;
+}
+
+.loader span:nth-child(1) {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+.loader span:nth-child(2) {
+  -webkit-animation-delay: -0.25s;
+  animation-delay: -0.25s;
+}
+
+.loader span:nth-child(3) {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+
+@keyframes dots_411 {
+  5% {
+    opacity: 0;
+  }
+
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  40% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+}
+
+/* header */
+#header {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  justify-items: center;
+  align-items: center;
+  font-family: 'gamilia';
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 25;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(10px);
+}
+
+#header img {
+  width: 80px;
+  margin-top: 10px;
+}
+
+#header img:hover {
+  cursor: pointer;
+}
+
+#header ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+#header ul > li {
+  display: inline;
+  padding-right: 35px;
+  font-size: 28px;
+  color: rgb(27, 71, 46);
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 2.5fr 5fr;
+  overflow: hidden;
+  margin-top: 90px;
+}
+
+/* header */
+
+/* .parfumes {
+  width: 130vh;
+  position: relative;
+  left: 381px;
+} */
+
+/* Home image */
+
+.typing-test {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  width: 350px;
+  font-family: 'gamilia';
+}
+
+body {
+  margin-bottom: 2500px;
+}
+
+.accent-green {
+  background-size: 100px 50px;
+  background-repeat: no-repeat;
+  background-image: url('https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/environment_highlight__4db4suxm3aam_large.png');
+}
+
+.parfumes {
+  left: calc(50% - 350px);
+  width: 800px;
+  height: 600px;
+  margin-left: 60px;
+  background-image: url('/images/home4-removebg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-items: center;
+  align-items: center;
+}
+
+.colorfulShadow {
+  position: relative;
+}
+
+.colorfulShadow::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  background-position: center center;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5)) blur(20px);
+  z-index: -1;
+}
+/* Home image */
+
+/* Arrow */
+.down-arrow {
+  position: absolute;
+  top: calc(100vh - 150px);
+  left: calc(50% - 14px);
+  width: 0;
+  height: 30px;
+  border: 2px solid;
+  border-radius: 2px;
+  animation: jumpInfinite 2.4s infinite;
+}
+
+.down-arrow:hover {
+  cursor: pointer;
+}
+
+.down-arrow:after {
+  content: ' ';
+  position: absolute;
+  top: 12px;
+  left: -8px;
+  width: 16px;
+  height: 16px;
+  border-bottom: 4px solid;
+  border-right: 4px solid;
+  border-radius: 4px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 20px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/images/home.jpg');
+  /* background-color: rgba(234, 168, 234, 0.456); Purple color with opacity */
+  backdrop-filter: blur(19px); /* Adjust the blur strength as needed */
+  z-index: 1; /* Ensure the overlay is on top of other content */
+}
+
+.introduction {
+  position: relative;
+}
+
+/* animated hover */
+
+:root {
+  --text: #73549d;
+  --line: #bbc1e1;
+  --line-active: #8364b0;
+}
+
+.round-text {
+  margin: 0;
+}
+
+.round-text span {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  margin: 0 var(--spacing, 0px);
+  transition: margin 0.25s;
+}
+
+.round-text span svg {
+  width: 79px;
+  height: 40px;
+  position: absolute;
+  left: 85%;
+  bottom: 6px;
+  transform: translate(-60%, 7px) translateZ(0);
+  fill: none;
+  stroke: var(--stroke, var(--line));
+  stroke-linecap: round;
+  stroke-width: 2px;
+  stroke-dasharray: var(--offset, 55px) 278px;
+  stroke-dashoffset: 361px;
+  transition: stroke 0.25s ease var(--stroke-delay, 0s), stroke-dasharray 0.75s;
+}
+
+.round-text span:hover {
+  cursor: pointer;
+  --spacing: 4px;
+  --stroke: var(--line-active);
+  --stroke-delay: 0.1s;
+  --offset: 150px;
+  color: #13a650;
+}
+
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+.underline span {
+  background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: var(--background-size, 100%) 3px;
+  transition: background-size 0.2s linear var(--background-delay, 0.15s);
+  font-size: 33px;
+  line-height: 20px;
+  transform: translateZ(0);
+}
+
+.underline svg {
+  vertical-align: left;
+  display: inline;
+  line-height: 1;
+  width: 17px;
+  height: 24px;
+  position: relative;
+  left: -2px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2px;
+  stroke: var(--line);
+  stroke-dasharray: 7.95 30;
+  stroke-dashoffset: var(--stroke-dashoffset, 46);
+  transition: stroke-dashoffset var(--stroke-duration, 0.15s)
+    var(--stroke-easing, linear) var(--stroke-delay, 0s);
+}
+
+.underline:hover {
+  cursor: pointer;
+  --background-size: 0%;
+  --background-delay: 0s;
+  --stroke-dashoffset: 26;
+  --stroke-duration: 0.3s;
+  --stroke-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
+  --stroke-delay: 0.195s;
+}

@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'gamilia';
+  src: url('/gamilia-font/GamiliaDemoRegular-d9DL7.ttf');
+  src: url('/gamilia-font/GamiliademoRegular-mL9Ev.otf');
+}
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #b5b5b5 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 13px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #b5b5b5;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+/* header */
+#header {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr;
+  justify-items: center;
+  align-items: center;
+  font-family: 'gamilia';
+}
+
+#header img {
+  width: 80px;
+  margin-top: 10px;
+}
+
+#header ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+#header ul > li {
+  display: inline;
+  padding-right: 35px;
+  font-size: 28px;
+  color: rgb(27, 71, 46);
+}
+
+/* header */
+
+.parfumes {
+  width: 130vh;
+  position: relative;
+  left: 380px;
+}
