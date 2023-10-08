@@ -242,7 +242,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/images/home.jpg');
+  background-image: url('../images/home.jpg');
   /* background-color: rgba(234, 168, 234, 0.456); Purple color with opacity */
   backdrop-filter: blur(19px); /* Adjust the blur strength as needed */
   z-index: 1; /* Ensure the overlay is on top of other content */
