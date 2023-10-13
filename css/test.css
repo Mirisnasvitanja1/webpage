@@ -342,3 +342,72 @@ html {
   --stroke-easing: cubic-bezier(0.3, 1.5, 0.5, 1);
   --stroke-delay: 0.195s;
 }
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 430px;
+}
+
+.products_description {
+  grid-column: 1 / 2;
+}
+.product_images {
+  position: absolute;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  overscroll-behavior: none;
+}
+
+.product1 {
+  position: relative;
+  background-color: grey;
+  border-radius: 15px;
+  width: 180px;
+  height: 250px;
+}
+
+.product2 {
+  position: relative;
+  background-color: grey;
+  border-radius: 15px;
+  width: 150px;
+  height: 250px;
+  left: 210px;
+  top: -250px;
+}
+
+.product3 {
+  position: relative;
+  background-color: grey;
+  border-radius: 15px;
+  width: 360px;
+  height: 150px;
+  top: -220px;
+}
+
+.product4 {
+  position: relative;
+  background-color: grey;
+  border-radius: 15px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  width: 300px;
+  height: 430px;
+  left: 375px;
+  top: -650px;
+}
+
+.products_description h2 {
+  font-size: 55px;
+}
+
+.products_description {
+  margin-left: 44px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+}
