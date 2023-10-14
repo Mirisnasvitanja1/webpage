@@ -146,10 +146,10 @@
         </a>
       </div>
       <div class="product_images">
-        <div class="product1"></div>
-        <div class="product2"></div>
-        <div class="product3"></div>
-        <div class="product4"></div>
+        <div class="product product1"></div>
+        <div class="product product2"></div>
+        <div class="product product3"></div>
+        <div class="product product4"></div>
       </div>
     </section>
 
@@ -160,9 +160,10 @@
           align-items: center;
           flex-direction: column;
           flex-wrap: wrap;
+          font-family: 'gamilia';
         ">
         Costumer Chronicles:
-        <span class="fancy"
+        <span class="fancy" style="font-family: var(--bs-font-sans-serif)"
           >Because They Tell Our Story Better Than We DO!</span
         >
       </h2>
@@ -307,21 +308,164 @@
       <div class="text text-2">.</div>
     </section>
 
-    <section class="blog">
-      <h2>As we said, this is the part where u find out...</h2>
+    <section class="blog" style="margin-top: 25px">
+      <div class="container px-4 py-5" id="custom-cards">
+        <h2 class="pb-2 border-bottom">
+          This is our section that ur sure to love.
+        </h2>
 
+        <div
+          class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+          style="color: white">
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1576707948881-b485713fbad7?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1470&amp;q=80');
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 15px;
+              ">
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3
+                  class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
+                  style="
+                    padding-top: 1rem !important;
+                    margin-bottom: 6.5rem !important;
+                  ">
+                  We made something that will help ocean!
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white" />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>New York</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>3d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1612982228711-a7ba4a74b49c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=1374&amp;q=80');
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 15px;
+              ">
+              <div
+                class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                <h3
+                  class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
+                  style="
+                    padding-top: 1rem !important;
+                    margin-bottom: 6.5rem !important;
+                  ">
+                  This is our story on how we function and our eco-friendly
+                  journey.
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="data:image/png;base64,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"
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white" />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>Los Angeles</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>4d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div
+              class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4"
+              style="
+                background-image: url('https://images.unsplash.com/photo-1593132517397-ceb31d77194a?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHRlYW13b3JrfGVufDB8fDB8fHww&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60');
+                background-size: cover;
+                background-repeat: no-repeat;
+                border-radius: 15px;
+              ">
+              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                <h3
+                  class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"
+                  style="
+                    padding-top: 1rem !important;
+                    margin-bottom: 6.5rem !important;
+                  ">
+                  The beginning of everything; the beginning of us.
+                </h3>
+                <ul class="d-flex list-unstyled mt-auto">
+                  <li class="me-auto">
+                    <img
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEXz9fT5+/oyMjIwMDD2+Pf6/PsjIyMmJiYpKSksLCwgICDq7OsbGxvR09IlJSXj5eS3ubjFx8YWFhbo6ulPT0/v8fBfYF8+Pj6xs7JGRkZ2d3fc3t2HiIesray/wcDOz898fn1tbm2TlZSgoaCGh4dYWFikpaSPkJBCQUJTVFRJSUlwcHAEAwQODg5EbmlOAAAHRUlEQVR4nO2cf3uiOBDHzWQSkvBDoCoqolCrtvb2/b+9S/Bu79ptK+zKSvaZzz99ioj5MsNMCDNMJgRBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEARBEJ+AjIkLjOG9B3N7kE3i6tTMCihmzamKJ3+WSGRhulaRVJoDANdKRmqdhn+MSGTlCYxupQVSyqAVqg2cyj9DI5tudGAVyWTWPO2rZbV/amaJtIoDvZmyew/vl0FWgdUXyKYqQ2ZjjEWwsKwa6TZD5bsZMWwMt8Y6lfhGiv2vPFnTctOEXktk8bMCHj09fGApZA9PEQf1HHvsqSyzMSVYxeKNvu/WRBGvrBl15q1ElkkOpsa39sOsKv/Nhoi1AS59lYix4iD34t3W7C+TP5/if3SLvQSuYi+vRXwoOCSVeL95mXPgQdTsLnYUlZVYPPgokS0UyOOP/jevVybgoBMbf9r9jhLUwkM/FccIks1HA2dh/FgYmwzPu4vETQLR8b2tRw9OFejD/JMP2dzNA7hKW13zgwY99c1PxVrBVwGEzescIGol2pAEau2ZETEOIDh9OWixlADfWkcVJ7u3Z/FU1ArgEx/9vs/W7nPxzjmAqr0yIk4BkveZ8AfEMrBR1CkU+wTAqyuR2SQXhVd3E6cE5NL5aRiBrHzKGNho3XTxuhfOV+5MiFf7BY9s6JzUpB0GjLvoMivA1HjlppiZLk5qEY3mMxeRrJuazB+F7DHgs07DdUZsleGMB4/+XIhsrdRTt+GKM1e13ZU9KbX2R+FkoZN9t+GyfdK6qf2rFwOP6obMz/ySBK6DZZSv7V+2lPx8ZYowIsICzLZj2MB46daicGug6BScRkEIPQLj5WbfhV/wSGHRO/T7ZsMz75Tw/4dN+fzsj8LJgScfrF98BTsm/DDQaAYA11qdeio8Kb32aE5zCviip5cueNDzpNwTN48Oen4n6DZXHwlYKoh6BVPMIlClPwpdqFFPfVYlxJPyKdC4m4sEkl42tPt7dGtxWR80HWemDrY0X649jhBm72yfu48Yn7lufDKhixwJyB+eynyGezqTeHSH34ILzYuOCy84LbjumT/vD+7sldVxkoJre9XufFNo439XPxWVDaS9cstYKDioDs+vWaaAF79hPDcH4xy4vlpowWLNIfcrU/wLSyPgcve1+4md5BClfmWK77CjAYiWX1Q9IVtGAKbnveSIYHtpJdbhZwJYWFuBsuPC4yhhy7ZkKJ18+Dx/krqCIdVjdjdC2M6JkId0/rYuaoJinh6kk7/zWmDriDkHLc+Pu4lgeIGJSfx4lhp4/rkLewOybBa5GiFVNPs0i8s4S/dNoQK7LZplvhdftiBuX3Rb/ewqhB1BWw2tX7b4J+hzpYg4rZ2kt/B6iui/CZFNymoNkf5H1YXLPzqC9X9lin6CWB4XRl6K2KUJ4Pk8m83OzxCYS92+lmZxLL31VTbZvnInz+pYNZvlriyn4Xw+D6dluVtumpW5fMhftx/my7HDJssXp0AZ54shXlJF+9ElYWDo/Ne4qiH5svROI7L0bGw+kEm9nX8WT+z2+bZObN7n5pz6dT2K+OD0RavqWmMMsrBauXxpDrE/N8E4r3PtxpyJLr7HRObOh87ruSdmZFmRWP+cZaLzY2CRzayvJoUXJe04OVmnC4qqVw5ArAo7RY9Ok9GbkU0Xrr+g7t3QxKa1611YjL0TisUrBRrSn0jiiKn9plqNu4VGbO0g5eEn7cCmB2m/vx1xTBVpwiF63yTTHcQ6B56ko5Uo3LJSdLU0+MtD7N0hliOVKNIbGKB1g3ycVmSZWwH+5YtIbN0K8RgTI5b2vk/dIEq4En7Ox/dMH8Ozhq4FiV/DljainkfXWoqvCsyNnsSzRwPqdWQKxd5AcLPGHrEOwPxSTL45rjKhz3P7q8d75mOrXJhpMDcMDljaS3F2s8P9Osz6qLlpywur7BHH88TGnXF1444XbBTI0aQMYePorROYTa82no4k2OAuB3nzki32KCEfSYGGWGi+unmCxnDF9WIURnSVM7cNMxdcsIlGYUTXnDVIL8jcGrFTi9/AuGrZvmXr3WDHZBRVta5LeaBWkBCudUv/Fqwvqc0wwxAbxVd374XCrQQz0AwSYwOya//UYIha8fNQntQ2J97bTW3W6tpq2B/XnLi6c6uQc6R8sHiHZT7YJdAV1/FbDOdHorh7dzA2Wn34ipbbwDbq3m36D0WvroO+sKXhxcNgh+8AlhFEA047hj5+hxG4VyEM+gsdX84wGDbQDNxGsND3DTWsVkMGmjbUtC8kuB/2FA+6XsT2wX1fRNDj1QI/x91fROAa7wedGrsm9mtvYxqUMIBo0FkVxhEE95yZhkOnqzYh3lPhQ/4bFOb3nNQ8fOP5oO8+wmnOv91TIe5hP+yMY/hfuALrVJs37l8gCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCGJk/A1z8Fn0u+U7kgAAAABJRU5ErkJggg=="
+                      alt="Bootstrap"
+                      width="32"
+                      height="32"
+                      class="rounded-circle border border-white" />
+                  </li>
+                  <li class="d-flex align-items-center me-3">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <small>California</small>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <svg class="bi me-2" width="1em" height="1em">
+                      <use xlink:href="#calendar3"></use>
+                    </svg>
+                    <small>5d</small>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- <section class="aboutUs">
+      <img src="/images/aboutUs-firstPage-removebg-preview.png" alt="" />
+
+      <section class="aboutUs">
       <div class="left">
         <h2>We couldn't wait for u any longer. This is our story, welcome.</h2>
       </div>
 
-      <img src="/images/aboutUs-firstPage-removebg-preview.png" alt="" />
-
-      <!-- newsletter text idea after we introduce ourselves
-      <h2>In case you love hearing from us, subscribe to our newsletter.</h2> -->
-      <!-- <h2>Hello, once again. This is our story.</h2> -->
+      newsletter text idea after we introduce ourselves
+      <h2>In case you love hearing from us, subscribe to our newsletter.</h2> 
+       <h2>Hello, once again. This is our story.</h2>
     </section> -->
 
     <script src="javascript/loader.js"></script>
