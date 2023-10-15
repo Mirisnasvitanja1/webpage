@@ -1,4 +1,4 @@
-window.addEventListener('load', function () {
+/* window.addEventListener('load', function () {
   // When the page is fully loaded, hide the loader
   var loader = document.querySelector('.loader-container');
   loader.style.display = 'none';
