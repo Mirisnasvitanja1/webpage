@@ -243,7 +243,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)"/></svg>');
+  background: url('https://img.freepik.com/free-photo/cardboard-texture_1194-5419.jpg');
   /* background-color: rgba(234, 168, 234, 0.456); Purple color with opacity */
   backdrop-filter: blur(19px); /* Adjust the blur strength as needed */
   z-index: 1; /* Ensure the overlay is on top of other content */
