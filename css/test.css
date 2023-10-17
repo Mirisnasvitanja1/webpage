@@ -163,7 +163,7 @@ body {
 }
 
 .accent-green {
-  background-size: 100px 50px;
+  background-size: 95px 42px;
   background-repeat: no-repeat;
   background-image: url('https://www.apple.com/v/macbook-air-13-and-15-m2/b/images/overview/routers/environment_highlight__4db4suxm3aam_large.png');
 }
@@ -242,7 +242,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;  /* background-color: rgba(234, 168, 234, 0.456); Purple color with opacity */
+  height: 100%;  
+  background-color: rgba(163, 140, 198, 0.33); /* Purple color with opacity */
   backdrop-filter: blur(19px); /* Adjust the blur strength as needed */
   z-index: 1; /* Ensure the overlay is on top of other content */
 }
