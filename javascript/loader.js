@@ -2,7 +2,6 @@ window.addEventListener('load', function () {
   // When the page is fully loaded, hide the loader
   var loader = document.querySelector('.loader-container');
   loader.style.display = 'none';
-  document.body.style.overflow = 'hidden';
 });
 
 document.addEventListener('DOMContentLoaded', function () {
